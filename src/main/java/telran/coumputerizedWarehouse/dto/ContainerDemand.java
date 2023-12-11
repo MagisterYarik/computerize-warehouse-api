@@ -1,4 +1,4 @@
-package telran.analizer.dataContainerAnalazerOpen.dto;
+package telran.coumputerizedWarehouse.dto;
 
 public record ContainerDemand(long containerId ,double demandVolume ) {
 
