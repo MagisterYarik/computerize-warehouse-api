@@ -22,5 +22,6 @@ public class Container {
 	long container_id;
 	@ManyToOne
 	Product product;
+	double product_capacity;
 
 }
