@@ -4,7 +4,17 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@EqualsAndHashCode
+@ToString
 @Entity
 @Table(name="container")
 public class Container {
@@ -12,10 +22,5 @@ public class Container {
 	long container_id;
 	@ManyToOne
 	Product product;
-	
-	Container(long container_id, Product product){
-		this.container_id = container_id;
-		this.product = product;
-	}
 
 }
