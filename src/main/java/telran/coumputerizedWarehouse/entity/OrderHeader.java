@@ -2,6 +2,7 @@ package telran.coumputerizedWarehouse.entity;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -26,7 +27,9 @@ public class OrderHeader {
 	long containerId; 
 	long productId; 
 	double demand; 
+	@Column(columnDefinition = "DATE")
 	LocalDate orderDate; 
+	@Column(columnDefinition = "DATE")
 	LocalDate deliveryDate;
 	
 	public OrderHeader(short status, long containerId, long productId, double demand, LocalDate orderDate, LocalDate deliveryDate) {
