@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 import telran.coumputerizedWarehouse.entity.OrderHeader;
 
-public record OrderDataHeader(long orderId, char status, long containerId, long productId, double demand, LocalDate orderDate, LocalDate deliveryDate) {
+public record OrderDataHeader(long orderId, short status, long containerId, long productId, double demand, LocalDate orderDate, LocalDate deliveryDate) {
 	
 	public OrderDataHeader(OrderHeader order){
 		this(order.getOrderId(), 
