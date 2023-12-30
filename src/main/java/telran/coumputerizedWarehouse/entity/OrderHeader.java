@@ -22,12 +22,12 @@ import lombok.ToString;
 public class OrderHeader {
 	@Id
 	@GeneratedValue
-	long order_id; 
+	long orderId; 
 	char status; 
-	long container_id; 
-	long product_id; 
+	long containerId; 
+	long productId; 
 	double demand; 
-	LocalDate order_date; 
-	LocalDate delivery_date;
+	LocalDate orderDate; 
+	LocalDate deliveryDate;
 
 }

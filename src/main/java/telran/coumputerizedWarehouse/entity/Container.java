@@ -19,9 +19,9 @@ import lombok.ToString;
 @Table(name="container")
 public class Container {
 	@Id
-	long container_id;
+	long containerId;
 	@ManyToOne
 	Product product;
-	double product_capacity;
+	double productCapacity;
 
 }

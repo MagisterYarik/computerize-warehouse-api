@@ -18,8 +18,8 @@ import lombok.ToString;
 @Table(name="product")
 public class Product {
 	@Id
-	long product_id;
-	String product_name;
+	long productId;
+	String productName;
 	String units;
 	double lv;
 	boolean discrete;
